@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>CaselaNaturePark</title>
+    
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet.css" />
+
+   
+   </head>
+ 
+    
+<body>
+
+    
+    <form id="form1" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div id="wrapper">
+        <div id="banner">
+            
+        </div>
+
+        
+        <nav id="Hyperlink" dir="ltr">     
+           
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Home.aspx" EnableTheming="True">Home</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/VisitorInfo.aspx">Visitor Info</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Shop.aspx">Shop</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/ContactUs.aspx">Contact Us</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Pages/Faq.aspx">FAQ</asp:HyperLink>
+        
+          
+       </nav>       
+
+        
+            
+        <div id="content_area">
+             
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+                
+        <div id="sidebar">
+
+            <div id="first-sidebar">
+                         
+            <div>
+                 <aside class="first-sidebar">
+                   	<article>
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Pages/VisitorInfo.aspx" ImageUrl="~/Images/booknow.png"> HyperLink</asp:HyperLink>
+					<p style="font-weight: bold">- Fast track entry</p>
+                    <p style="font-weight: bold">- Valid for 45 days</p>
+                    
+                  	</article>
+				</aside>	
+
+               </div>
+                
+          </div>
+                    
+                
+           <div id="second-sidebar">
+                         
+            <div>
+                 <aside class="second-sidebar">
+                   	<article>
+                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Pages/Shop.aspx" ImageUrl="~/Images/onlineshop.png">HyperLink</asp:HyperLink><br />
+                           <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Pages/SoftToys.aspx" Font-Bold="True" ForeColor="Black">Soft Toys</asp:HyperLink> <br/>
+                           <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Pages/Books.aspx" Font-Bold="True" ForeColor="Black">Books</asp:HyperLink><br/>
+                           <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Pages/ArtistPaints.aspx" Font-Bold="True" ForeColor="Black">Artist Paints</asp:HyperLink><br/>
+                           <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/Pages/Decorations.aspx" Font-Bold="True" ForeColor="Black">Decorations</asp:HyperLink><br/>
+                           <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Pages/Gifts.aspx" Font-Bold="True" ForeColor="Black">Gifts</asp:HyperLink><br/>
+                           <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/Pages/Jewelleries.aspx" Font-Bold="True" ForeColor="Black">Jewelleries</asp:HyperLink><br/>
+
+					</article>
+				</aside>	
+
+            </div>
+
+          </div>
+
+            <div id="third-sidebar">
+                         
+            <div>
+                 <aside class="third-sidebar">
+                   	<article>
+					<p style="font-weight: bold">Stay connected and Follow Us on:</p>
+					<asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="https://www.facebook.com/DublinZoo" ImageUrl="~/Images/facebook.png" Target="_blank">HyperLink</asp:HyperLink>
+					<asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="https://twitter.com/DublinZoo" ImageUrl="~/Images/Twitter1.png" Target="_blank">HyperLink</asp:HyperLink>
+					</article>
+				</aside>	
+
+            </div>
+
+          </div>
+
+
+
+     </div>   
+         
+                  
+
+  <div id="footer">
+<footer class="mainfooter">
+	<p class="footer1">Copyright &copy; Casela Nature Park 
+	| <a href="Home.aspx"> Home</a>
+	| <a href="VisitorInfo.aspx">Visitor Info</a>
+	| <a href="Shop.aspx">Shop</a> 
+	| <a href="ContactUs.aspx">Contact Us</a> 
+	| <a href="Faq.aspx">FAQ</a> 
+	</p>
+	<p class="footer2"><script>
+<!-- 
+    document.write("This page was last modified on: " + document.lastModified);
+    // -->
+</script>
+</p>
+	</footer>
+ 
+        </div>
+      </div>       
+</form>
+</body>
+</html>
+
